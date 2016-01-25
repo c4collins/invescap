@@ -1,0 +1,79 @@
+// General globals
+page-width=1456px / 2
+icon-size=35px
+
+// Core style components
+color-core-background = white
+color-accent-darkest = #0A273B
+color-accent-darkest-transparent = alpha(color-accent-darkest, 50%)
+color-accent-middle = #0B3C5C
+color-accent-middle-transparent = alpha(color-accent-middle, 50%)
+color-accent-lightest = white
+color-accent-lightest-transparent = alpha(color-accent-lightest, 50%)
+
+font-family-main = "Avenir Next","Proxima Nova", sans-serif;
+
+// Mixins and overrides
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    -ms-{prop} args
+    -o-{prop} args
+    {prop} args
+
+border-radius()
+    vendor('border-radius', arguments)
+
+box-shadow()
+    vendor('box-shadow', arguments)
+
+transition()
+    vendor('transition', arguments)
+
+transform()
+    vendor('transform', arguments)
+
+transform-origin()
+    vendor('transform-origin', arguments)
+
+user-select()
+    vendor('user-select', arguments)
+
+background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval, deprecatedWebkitStartPoint = false, deprecatedWebkitEndPoint = false)
+    background-color startColor
+    if deprecatedWebkitStartPoint && deprecatedWebkitEndPoint
+        background-image -webkit-gradient(linear, deprecatedWebkitStartPoint, deprecatedWebkitEndPoint, color-stop(startInterval, startColor), color-stop(endInterval, endColor))
+    background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+
+clearfix()
+    content ""
+    display table
+    clear both
+    
+color-choice(parent_color, light_color=color-accent-lightest, dark_color=color-accent-darkest)
+    if light(parent_color)
+        dark_color
+    if dark(parent_color)
+        light_color
+        
+image-choice(normal, parent-color, image-path, image-type)
+    if normal == True
+        if dark(parent-color)
+            background-image url(image-path + "." + image-type)
+        else
+            background-image url(image-path + "-dark." + image-type)
+    else
+        if light(parent-color)
+            background-image url(image-path + "." + image-type)
+        else
+            background-image url(image-path + "-dark." + image-type)
+    
+square-icon-size(size)
+    height size
+    width size
+    background-size size size
+    background-repeat no-repeat

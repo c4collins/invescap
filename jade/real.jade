@@ -1,0 +1,36 @@
+extends ./layout.jade
+
+block content
+    section(class="core core-desktop")
+                div(class="inner-container")
+                    each section, section_name in core_sections
+                        section(class="core-information " + section_name.toLowerCase().replace(/ /g, "-").replace(/&.*;/g, "_").replace(/[?¿¡!()]/g, "_"))
+                            h2!=section_name
+                            if section.hasOwnProperty('menu')
+                                div(class="core-information-menu")
+                                    ul(class="menu vertical")
+                                        each url, item in section["menu"]
+                                            li
+                                                a(href="url")!=item
+                            each text in section["content"]
+                                if text == ""
+                                    br
+                                else
+                                    p!=text
+                            footer
+                                a(href="")
+                                    div(class="icon-social social-email")
+                                a(href="")
+                                    div(class="icon-social social-share")
+
+            section(class="image-slider information-slider")
+                div(class="inner-container")
+                    h2 Speakers
+                    ul(class="slideshow")
+                        li(class="grid")
+                            div(class="col_8")
+                                h4 Vanessa Kolodziej
+                                p Co-fundadora de NAZCA ventures.
+                                p Actual CFO de CAAPITAL
+                            div(class="col_4")
+                                div(class="speakers vanessa-kolodziej")

@@ -1,0 +1,62 @@
+// Menu Settings
+.menu
+    background transparent
+    li
+        a
+            text-shadow none
+ul.horizontal-menu
+    margin 0
+        a
+            color color-accent-lightest
+            text-transform uppercase
+                
+ul.horizontal-menu-primary
+    border-style solid
+    border-color color-accent-lightest-transparent transparent color-accent-lightest
+    border-width 1px 0
+    li
+        a
+            color color-accent-lightest
+        &:hover,
+        .hover
+            a
+                background-color color-accent-darkest
+        ul
+            font-size 9px
+            li
+                &:hover,
+                .hover
+                    a
+                        background-color color-accent-middle
+                
+ul.horizontal-menu-primary-submenu
+    border-width 1px 0 0 0
+ul.horizontal-menu-secondary
+    border none
+    li
+        &:first-child
+            margin-right 20px
+        a
+            font-size 19px
+            color color-accent-lightest
+
+.core-information-menu
+    position: absolute;
+    left: -170px;
+    top: 20px;
+    float: left;
+    square-icon-size(icon-size)
+    background-position  top right
+    width 150px
+    ul
+        display none
+        margin-top icon-size
+        background-color color-accent-darkest-transparent
+        li
+            a
+                color color-accent-darkest
+                text-transform uppercase
+                font-weight bold
+    &:hover
+        ul
+            display block

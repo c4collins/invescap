@@ -1,0 +1,75 @@
+include ./datafile.jade
+doctype html
+html(lang="es")
+    head
+        title INVESCAP - EGAVE Business School
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+        script(src="js/kickstart.js")
+        script(src="https://use.typekit.net/sdv8lwg.js")
+        script.
+            try{Typekit.load({ async: true });}catch(e){}
+        link(rel="stylesheet" href="css/kickstart.css" media="all")
+        link(rel="stylesheet" type="text/css" href="css/base.css")
+    body
+        section(class="header header-desktop")
+            div(class="inner-container")
+                div(class="logo-wrapper col_10")
+                    div(class="logo logo-egade")
+                    div(class="logo logo-invescap")
+                div(class="header-menu col_2")
+                    ul(class="menu vertical")
+
+
+        section(class="hero hero-desktop")
+            div(class="inner-container")
+                h1 Educati&oacute;n Ejecutiva
+                ul(class="menu horizontal-menu horizontal-menu-secondary right")
+                    each link, item in secondary_menu
+                        li
+                            a(href=link)!= item
+                ul(class="menu horizontal-menu horizontal-menu-primary")
+                     each sublist, title in primary_menu
+                        li
+                            a(href=sublist["link_url"])!= title
+                            ul(class="horizontal-menu-primary-submenu")
+                                each link, item in sublist["list_items"]
+                                    li
+                                        a(href=link)!= item
+                section(class="program-infobox grid flex")
+                    h3(class="col_12") Capital Privado & Capital Emprendedor
+                    div(class="col_4")
+                        p 19 de Febrero de 2016
+                        p Salas Ejecutivas, Sal&oacute;n de Congresos Technol&oacute;gico de Monterrey, Campus Guadalajara
+                    div(class="col_4")
+                    div(class="col_4")
+                        p 
+                            a(href="mailto:nidiaj@itesm.mx") nidiaj@itesm.mx
+                        p (33) 3669 3000 ext 2220
+                section(class="hero-image image-slider")
+                    ul(class="slideshow")
+                        li
+                            img(src="images/hero-slideshow-1.png")
+       
+        block content
+
+        section(class="footer footer-desktop")
+            div(class="inner-container")
+                ul(class="footer-icons")
+                    li
+                        a(href="fb:")
+                            div(class="icon-social social-facebook")
+                    li
+                        a(href="tw:")
+                            div(class="icon-social social-twitter")
+                    li
+                        a(href="")
+                            div(class="icon-social social-share")
+                    li
+                        div(class="footer-menu")
+                            ul(class="menu vertical")
+                                li Item 1
+                                li Item 2
+                                li Item 3
+                div(class='logo-wrapper col_10')
+                    div(class="logo logo-egade")
+                    div(class="logo logo-invescap")
