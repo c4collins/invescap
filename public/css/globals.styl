@@ -1,4 +1,22 @@
 // Tag Overrides / Resets
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: inherit;
+  /* this disables font boosting on mobile chrome... */
+  max-height: 10000vh;
+  /* this might also do the same thing one day... */
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, h6
     margin 0
 body
@@ -23,9 +41,9 @@ a
 .logo 
     background-repeat no-repeat 
     display inline-block
-    height 56px
-    width 291px
-    background-size 271px, @height  
+    height 75px
+    width 370px
+    background-size @width - 40, @height  
 
 // Slideshow Global Settings
 .hero,

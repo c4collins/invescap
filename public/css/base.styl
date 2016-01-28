@@ -19,9 +19,14 @@
         image-choice(True, @background-color, "../images/logo-invescap", "png")
         float right
     .header-menu
-        display inline-block
+        // display inline-block
         square-icon-size(icon-size)
         image-choice(True, @background-color, "../images/icons/menu", "png")
+        &:hover
+            li
+                display block
+        li
+            display none
 .hero 
     background-color color-accent-middle
     &:after
@@ -56,7 +61,7 @@
     position relative
     background-color color-accent-lightest
     color color-choice(@background-color, color-accent-lightest, color-accent-darkest)
-    margin 20px 0 30px
+    margin 20px 0 30px 120px
     footer        
         border-bottom 2px solid color-accent-darkest
         padding-bottom 5px
@@ -80,9 +85,6 @@
                 display block
         li
             display none
-            
-    .core-information-menu
-        image-choice(True, @background-color, "../images/icons/menu", "png")
 .information-slider
     background-color color-accent-darkest
     color color-accent-lightest

@@ -1,4 +1,4 @@
-include ./datafile.jade
+//- include ./datafile.jade
 doctype html
 html(lang="es")
     head
@@ -20,17 +20,19 @@ html(lang="es")
                     div(class="logo logo-invescap")
                 div(class="header-menu col_2")
                     ul(class="menu vertical")
+                        l1 Item 1
+                        li Item 2
 
 
         section(class="hero hero-desktop")
             div(class="inner-container")
                 h1 Educati&oacute;n Ejecutiva
                 ul(class="menu horizontal-menu horizontal-menu-secondary right")
-                    each link, item in secondary_menu
+                    each link, item in public._data.secondary_menu
                         li
                             a(href=link)!= item
                 ul(class="menu horizontal-menu horizontal-menu-primary")
-                     each sublist, title in primary_menu
+                     each sublist, title in public._data.primary_menu
                         li
                             a(href=sublist["link_url"])!= title
                             ul(class="horizontal-menu-primary-submenu")
