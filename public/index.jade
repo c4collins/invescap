@@ -3,25 +3,49 @@ extends ./layout.jade
 block content
     section(class="core core-desktop")
         div(class="inner-container")
-            each section, section_name in public._data.core_sections
-                section(class="core-information " + section_name.toLowerCase().replace(/ /g, "-").replace(/&.*;/g, "_").replace(/[?¿¡!()]/g, "_"))
-                    h2!=section_name
-                    if section.hasOwnProperty('menu')
-                        div(class="core-information-menu")
-                            ul(class="menu vertical")
-                                each url, item in section["menu"]
-                                    li
-                                        a(href="url")!=item
-                    each text in section["content"]
-                        if text == ""
-                            br
-                        else
-                            p!=text
-                    footer
-                        a(href="")
-                            div(class="icon-social social-email")
-                        a(href="")
-                            div(class="icon-social social-share")
+            each section in public._data.content_sections
+                section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
+                    h2!= section.menu_name
+                    for section_contents in section.contents
+                        section(class=section.menu_name.toLowerCase() + " " + section_contents.menu_name.toLowerCase() id=section_contents.menu_name.toLowerCase())
+                            h4!= section_contents.full_title
+                            if section_contents.content_type == "text"
+                                for content_item in section_contents.content
+                                    - if (typeof content_item == "string") {
+                                        p!= content_item
+                                    - }
+                                    - else if  (typeof content_item == "object") {
+                                        ul
+                                            for list_item in content_item
+                                                li!= list_item
+                                    - }
+                            else if section_contents.content_type == "object"
+                                for content_object in section_contents.content
+                                    div
+                                        h5!= content_object.code + ". " + content_object.name
+                                        for module in content_object.modules
+                                            div
+                                                h6!= module.code + ". " + module.name
+                                                
+                                                if module.date
+                                                    p!= "Fecha: " + module.date.year + "/" + module.date.month + "/" + module.date.day
+                                                
+                                                if module.length.days
+                                                    p!= "Duración: " + module.length.days + " dias"
+                                                else if module.length.hours
+                                                    p!= "Duración: " + module.length.hours + " horas"
+                                                
+                                                if module.speaker
+                                                    p!= "Speaker: " + module.speaker
+                                                
+                                                if module.details
+                                                    p!= module.details
+
+                     footer
+                         a(href="")
+                             div(class="icon-social social-email")
+                         a(href="")
+                             div(class="icon-social social-share")
 
         section(class="image-slider information-slider")
             div(class="inner-container")

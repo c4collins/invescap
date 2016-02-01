@@ -1,78 +1,295 @@
-{  
-    "primary_menu":{  
-        "Programa":{  
-            "link_url":"#programa",
-            "list_items":{  
-                "Thing 1":"Link1",
-                "Thing 2":"Link2",
-                "Thing 3":"Link3"
-            }
+{
+    "taglines": [
+        "La ciencia y el arte de invertir en capital emprendedor.",
+        "Programa Ejecutivo de capacitaci&ograve;n en creación y administración de fondos de capital privado y capital emprendedor en M&egrave;xico.",
+        "Toda gran empresa nace de la mano de un gran inversionista que arriesga en ella."
+    ],
+    "content_sections":[
+        { 
+            "menu_name": "Programa",
+            "contents": [
+                {
+                    "menu_name": "Intro",
+                    "full_title": "La importancia de los fondos de Capital Emprendedor en México",
+                    "content_type": "text",
+                    "content": [
+                        "En los últimos años los términos Capital Privado, Capital Emprendedor, Venture Capital e Inversión Ángel han tomado relevancia en la arena empresarial y emprendedora",
+                        "El Capital Privado es un catalizador del crecimiento económico, de la generación de valor y lo más importante de empresas con calidad y trascendencia.",
+                        "A partir del año 2005 el número de fondos en México ha venido aumentando en más de un 50% anual llegando a un total aproximado de 160 fondos para finales de 2015, financiando mas de 100 empresas y creando innovaciones y trabajo para el pueblo mexicano.",
+                        "Dada la importancia del sector, el EGADE Business School y el Instituto Tecnológico de Monterrey se une a los jugadores más relevantes del mercado para lanzar <strong>INVESCAP Executive Program</strong>, un programa de creación de fondos de capital emprendedor y capital privado en México."
+                    ]
+                },
+                {
+                    "menu_name": "Descriptión",
+                    "full_title": "<strong>INVESCAP Executive Program</strong>: Primer programa de creación de fondos de capital emprendedor en México.",
+                    "content_type": "text",
+                    "content": [
+                        "<strong>INVESCAP Executive Program</strong> es el Primer Programa Ejecutivo de Administración y Operación de Capital Privado y Capital Emprendedor impartido por esta institución, en México.",
+                        "El curso se inicia el próximo 16 de Febrero del 2016 en las instalaciones del Tecnológico de Monterrey Campus Guadalajara.",
+                        "El programa cuenta con 12 módulos con 70 horas de capacitación, dictada por académicos y líderes pertenecientes a los fondos de capital emprendedor de mayor relevancia en México así como organizaciones líderes proveedoras de servicios a nivel nacional e internacional.",
+                        "Será el primer programa de fondos que le da una importancia especial al capital semilla y al emprendimiento tecnológico."
+                    ]
+                },
+                {
+                    "menu_name": "Objetivos",
+                    "full_title": "¿Qué esperar del programa <strong>INVESCAP Executive Program</strong>?",
+                    "content_type": "text",
+                    "content": [
+                        "El objetivo principal de este programa es brindar las herramientas necesarias para la creación y ejecución de un fondo de capital emprendedor.",
+                        "Así mismo se espera lograr:",
+                        [
+                            "Cubrir los aspectos generales de un fondo, desde: fuentes de fondeo, panorama de la industria hasta cómo gana dinero un fondo.",
+                            "Brindar herramientas para analizar empresas, realizar valuaciones, hacer inversiones y seguimiento de las mismas.",
+                            "Describir cuales son las estrategias para crear un fondo, incluyendo los documentos necesarios para levantar capital, los aspectos legales y fiscales, y el rol del gobierno entre otros.",
+                            "Estar al tanto de las organizaciones más relevantes así como de las tendencias en el sector.",
+                            "Generar networking con los participantes del programa y con speakers y personas relevantes que se estarán invitando a través del mismo."
+                        ]
+                    ]
+                },
+                {
+                    "menu_name": "Dynamica",
+                    "full_title": "¿Cuál es la dinámica del programa <strong>INVESCAP Executive Program</strong>?",
+                    "content_type": "text",
+                    "content": [
+                        "El programa se basará en el análisis y la experiencia de los principales referentes del sector. Se aplicarán las siguiente dinámicas:",
+                        [
+                            "Casos prácticos en donde el alumno podrá analizar casos reales, locales con la finalidad de simular de la manera más cercana posible a la realidad el proceso de inversión y negociación de un fondo.",
+                            "Discusiones en profundidad y con amplio espacio para las preguntas y el debate.",
+                            "Crear un abordaje con el espectro más amplio posible en cuanto a tamaño de empresas e industrias."
+                        ],
+                        "Se harán especial hincapié al networking, con la organización de Cocktails y otros eventos, y se invitarán speakers, casos de éxito, inversionistas extranjeros relevantes para ampliar la red de contactos de los participantes."
+                    ]
+                },
+                {
+                    "menu_name": "Modulos",
+                    "full_title": "¿Cuáles son los módulos del programa <strong>INVESCAP Executive Program</strong>?",
+                    "content_type": "object",
+                    "content": [
+                        {
+                            "name": "Intro",
+                            "code": "a",
+                            "modules": [
+                                {
+                                    "code": "Módulo I",
+                                    "name": "Contexto y Análysis de Fondos de Capital Privado en México.",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": null,
+                                    "details": "Identificar los actores principales del sector del capital privado en México y el mundo, así como las características principales de un Fondo. Introducción a la terminología específica."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Invertir en Empresas",
+                            "code": "b",
+                            "modules": [
+                                {
+                                    "code": "Módulo II",
+                                    "name": "Etapa y Perfil de las Empresas Objetivo de Inversión.",
+                                    "date": {"year": "2016", "month": "02", "day": "44"},
+                                    "length": {"hours": 4},
+                                    "speaker": "Carlos de la Torre",
+                                    "details": "Identificar la etapa en la que se encuentra una empresa objetivo de inversión, y en base a esto, reconocer sus puntos críticos y el retorno esperado."
+                                },
+                                {
+                                    "code": "Módulo III",
+                                    "name": "Aspectos Cualitativos de una Inversión.",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": "Carlos de la Torre",
+                                    "details": "Identificar elementos claves de una empresa para ser un objetivo de inversión atractivo, el perfil del empresario, el equipo de trabajo, etc."
+                                },
+                                {
+                                    "code": "Módulo IV",
+                                    "name": "Metodologias de Valorizacion (Modelos de Valuacion) de las Inversiones y Expectativas por Etapa.",
+                                    "date": null,
+                                    "length": {"hours": 12},
+                                    "speaker": "Varios",
+                                    "details": "Entender conceptos financieros en profundidad relacionados con la valuación de una empresa. Conocer y poder aplicar las diferentes metodologías de valuación. Identificar de riesgos de la empresa en donde se va a invertir y su manejo."
+                                },
+                                {
+                                    "code": "Módulo V",
+                                    "name": "Due Diligence de una Inversion.",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": "Speaker de Deloitte",
+                                    "details": "Identificar las características e implicaciones en la ejecución de un Due Diligence en el proceso de investigación, validación, revisión y negociación entre las partes. Cómo llevar el proceso adelante."
+                                },
+                                {
+                                    "code": "Módulo VI",
+                                    "name": "Estructuracion de una Inversion y la Salida.",
+                                    "date": null,
+                                    "length": {"hours": 8},
+                                    "speaker": null,
+                                    "details": "Reconocer los distintos instrumentos con los que cuenta un fondo para realizar una inversión, así mismo conocer las implicaciones de cada una de ellas. Conocer las estrategias de salida viables para cada empresa, de tal manera que sean eficientes, exitosas y redituables para las partes involucradas y que se estructuren bien desde el inicio. Identificar las partes de ambos procesos."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Crear un Fondo",
+                            "code": "c",
+                            "modules": [
+                                {
+                                    "code": "Módulo VII",
+                                    "name": "Levantamiento de Capital de un Fondo (Fund Raising).",
+                                    "date": null,
+                                    "length": {"hours": 6},
+                                    "speaker": "Vanesa Kolodziej",
+                                    "details": "Reconocer las partes involucradas en la preparación de una ronda de levantamiento de capital para un fondo. Esto incluye cómo planearla y ejecutarla, así como como cerrarla."
+                                },
+                                {
+                                    "code": "Módulo VIII",
+                                    "name": "Estrategia de Fondos (Fund Fundamentals).",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": "Vanesa Kolodziej",
+                                    "details": "Identificar el propósito, elementos y objetivos de una estrategia de inversión. Explorar mecanismos para definir la estrategia, los lineamientos y la filosofía de inversión del fondo, entendiendo las fortalezas de los fund managers, la oferta y demanda de proyectos, y el contexto donde va a operar el fondo."
+                                },
+                                {
+                                    "code": "Módulo IX",
+                                    "name": "Administracion de un Fondo (Fund Management).",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": null,
+                                    "details": "Conocer los elementos claves que conlleva administrar un fondo, en sus detalles operativos y del día a día."
+                                },
+                                {
+                                    "code": "Módulo X",
+                                    "name": "Aspectos Legales de Estructuraction y Operacion de un Fondo.",
+                                    "date": null,
+                                    "length": {"hours": 8},
+                                    "speaker": "Mtro. Daniel Diz",
+                                    "details": "Reconocer los vehículos de inversión y aspectos legales para estructurar tanto un fondo como las inversiones hacia la empresa."
+                                },
+                                {
+                                    "code": "Módulo XI",
+                                    "name": "Aspectos Fiscales de Estructuraction y Operacion de un Fondo.",
+                                    "date": null,
+                                    "length": {"hours": 8},
+                                    "speaker": "Alberto Fabio (Intelegis)",
+                                    "details": "Reconocer los aspectos fiscales que impactan las inversiones en las empresas y hacia los fondos."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cierre",
+                            "code": "d",
+                            "modules": [
+                                {
+                                    "code": "Módulo XII",
+                                    "name": "VC Trends y Trending Industries.",
+                                    "date": null,
+                                    "length": {"hours": 4},
+                                    "speaker": "Varios",
+                                    "details": "Reconocer las tendencias dentro de la industria de capital privado así como los sectores productivos que actualmente representar atractivas oportunidades de inversión."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
-        "Admisiones":{  
-            "link_url":"#admisiones",
-            "list_items":{  
-                "Becas":"url",
-                "Inversi&oacute;n":"url"
-            }
+        {
+            "menu_name": "Admisiones",
+            "contents": [
+                {
+                    "menu_name": "Participantes",
+                    "full_title": "¿A quién apunta el programa <strong>INVESCAP Executive Program</strong>?",
+                    "content_type": "text",
+                    "content": [
+                        "Este programa está especialmente diseñado para personas interesadas y vinculadas a la industria de capital privado, que deseen aprender o interiorizarse más del tema:",
+                        [
+                            "Actuales y potenciales administradores de fondos",
+                            "inversionistas privados “LP’s”",
+                            "inversionistas ángeles",
+                            "analistas",
+                            "funcionarios de la banca",
+                            "funcionarios públicos",
+                            "consultores especializados",
+                            "y personas que deseen en algún momento incursionar en el ámbito del Capital Privado y Capital Emprendedor."
+                        ]
+                    ]
+                },
+                {
+                    "menu_name": "Costos",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                },
+                {
+                    "menu_name": "Becas",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                }
+            ]
         },
-        "Nosotros":{  
-            "link_url":"#nosotros",
-            "list_items":{  
-                "Okay":"url",
-                "Claro":"url"
-            }
+        {
+            "menu_name": "Nosotros",
+            "contents": [
+                {
+                    "menu_name": "Profesores",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                },
+                {
+                    "menu_name": "Organizadores",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                }
+            ]
         },
-        "Recursos":{  
-            "link_url":"#recursos",
-            "list_items":{  
-                "Correo Electronico":"url",
-                "Telefono":"url"
-            }
+        {
+            "menu_name": "Recursos",
+            "contents": [
+                {
+                    "menu_name": "Notas",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                },
+                {
+                    "menu_name": "Papers y Casos",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                },
+                {
+                    "menu_name": "Podcasts",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                },
+                {
+                    "menu_name": "Videos",
+                    "full_title": null,
+                    "content_type": null,
+                    "content": null
+                }
+            ]
+        }
+    ],
+    "secondary_menu": [
+        {
+            "name": "FAQs",
+            "url": "faqs"
+        },
+        {
+            "name": "Contactanos",
+            "url": "contact-us"
+        }
+    ],
+    "program_info": {
+        "school_name": "Educatión Ejecutiva",
+        "program_name": "Capital Privado & Capital Emprendedor",
+        "start_date": {"year": "2016", "month": "2", "day": "19"},
+        "location": "Salas Ejecutivas, Sal&oacute;n de Congresos Technológico de Monterrey, Campus Guadalajara",
+        "contact": {
+            "email": "nidia@itesm.mx",
+            "phone": "(33) 3669 3000 ext 2220"
         }
     },
-    "secondary_menu":{  
-        "FAQs":"FAQs",
-        "Contactanos":"Contactanos"
-    },
-    "core_sections":{  
-        "Programa":{  
-            "menu":{  
-                "Objetivos":"objetivos_url",
-                "Speakers":"speakers_url",
-                "Participantes":"participantes_url",
-                "Admisiones":"admisiones_url"
-            },
-            "content":[  
-                "La idea es tenet un programa muy aterrizado con casos pr&aacute;cticos y reales que tengan cercan&iacute;a con los interesados para poder asegurar as&iacute; la mayor relevancia del alumno."
-            ]
-        },
-        "Qu&eacute; Esperar del Programa?":{  
-            "menu":{  
-                "Objetivos":"objetivos_url",
-                "Speakers":"speakers_url",
-                "Participantes":"participantes_url",
-                "Admisiones":"admisiones_url"
-            },
-            "content":[  
-                "En ests programa apreender&aacute;s",
-                "",
-                "Los aspectos generales de un fondo:"
-            ]
-        },
-        "Admisiones":{  
-            "menu":{  
-                "Objetivos":"objetivos_url",
-                "Speakers":"speakers_url",
-                "Participantes":"participantes_url",
-                "Admisiones":"admisiones_url"
-            },
-            "content":[  
-                "Inversion",
-                "69,000 Pesos + IVA",
-                "",
-                "Pagos",
-                "Con opci&oacute;n a 3, 6, 9 y 12 meses sin intereses."
-            ]
-        }
-    }
+    "page_title": "INVESCAP - EGAVE Business School - Educatión Ejecutiva"
 }
