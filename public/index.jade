@@ -6,11 +6,14 @@ block content
             each section in public._data.content_sections
                 section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
                     h2!= section.menu_name
-                    for section_contents in section.contents
-                        section(class=section.menu_name.toLowerCase() + " " + section_contents.menu_name.toLowerCase() id=section_contents.menu_name.toLowerCase())
-                            h4!= section_contents.full_title
-                            if section_contents.content_type == "text"
-                                for content_item in section_contents.content
+                    ul(class="menu vertical core-information-menu")
+                      each section_content in section.contents ? section.contents : ['There are no values']
+                        li= section_content.menu_name
+                    for section_content in section.contents
+                        section(class=section.menu_name.toLowerCase() + " " + section_content.menu_name.toLowerCase() id=section_content.menu_name.toLowerCase())
+                            h4!= section_content.full_title
+                            if section_content.content_type == "text"
+                                for content_item in section_content.content
                                     - if (typeof content_item == "string") {
                                         p!= content_item
                                     - }
@@ -19,8 +22,8 @@ block content
                                             for list_item in content_item
                                                 li!= list_item
                                     - }
-                            else if section_contents.content_type == "object"
-                                for content_object in section_contents.content
+                            else if section_content.content_type == "object"
+                                for content_object in section_content.content
                                     div
                                         h5!= content_object.code + ". " + content_object.name
                                         for module in content_object.modules
