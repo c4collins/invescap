@@ -7,8 +7,8 @@ block content
                 section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
                     h2!= section.menu_name
                     ul(class="menu vertical core-information-menu")
-                      each section_content in section.contents ? section.contents : ['There are no values']
-                        li= section_content.menu_name
+                        each section_content in section.contents ? section.contents : ['There are no values']
+                            li= section_content.menu_name
                     for section_content in section.contents
                         section(class=section.menu_name.toLowerCase() + " " + section_content.menu_name.toLowerCase() id=section_content.menu_name.toLowerCase())
                             h4!= section_content.full_title
@@ -25,10 +25,10 @@ block content
                             else if section_content.content_type == "object"
                                 for content_object in section_content.content
                                     div
-                                        h5!= content_object.code + ". " + content_object.name
+                                        h5!= content_object.code + ". " + content_object.name.toUpperCase()
                                         for module in content_object.modules
                                             div
-                                                h6!= module.code + ". " + module.name
+                                                h6!= module.code + ". " + module.name.toUpperCase()
                                                 
                                                 if module.date
                                                     p!= "Fecha: " + module.date.year + "/" + module.date.month + "/" + module.date.day

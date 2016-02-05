@@ -1,0 +1,23 @@
+section(class="footer footer-desktop")
+    div(class="inner-container")
+        each tagline in public._data.taglines
+            p!=tagline
+        ul(class="footer-icons")
+            li
+                a(href="fb:")
+                    div(class="icon-social social-facebook")
+            li
+                a(href="tw:")
+                    div(class="icon-social social-twitter")
+            li
+                a(href="")
+                    div(class="icon-social social-share")
+            li
+                div(class="footer-menu")
+                    ul(class="menu vertical")
+                        each link in public._data.secondary_menu
+                            li
+                                a(href=link.url)!= link.name
+        div(class='logo-wrapper col_10')
+            div(class="logo logo-egade")
+            div(class="logo logo-invescap")

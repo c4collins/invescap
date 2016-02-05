@@ -7,27 +7,39 @@
 ul.horizontal-menu
     margin 0
         a
-            color color-accent-lightest
-            text-transform uppercase
+            color color-core-text
                 
 ul.horizontal-menu-primary
     border-style solid
-    border-color color-accent-lightest-transparent transparent color-accent-lightest
+    border-color color-accent-darkest-transparent transparent color-core-text
     border-width 1px 0
     li
+        width 25%
+        text-align center
         a
-            color color-accent-lightest
+            width 100%
+            color color-core-text
+            letter-spacing 3px
+            // font-variant small-caps
+            text-transform uppercase
+        &.has-menu
+            a
+                span.arrow
+                    display none
         &:hover,
         .hover
             a
-                background-color color-accent-darkest
+                background-color color-accent-lightest
         ul
-            font-size 9px
+            width 100%
+            font-size 1.0rem
             li
+                width 100%
                 &:hover,
                 .hover
                     a
-                        background-color color-accent-middle
+                        background-color color-accent-darkest
+                        color color-accent-lightest
                 
 ul.horizontal-menu-primary-submenu
     border-width 1px 0 0 0
@@ -37,8 +49,10 @@ ul.horizontal-menu-secondary
         &:first-child
             margin-right 20px
         a
-            font-size 19px
-            color color-accent-lightest
+            // font-variant small-caps
+            text-transform uppercase
+            font-size 1.1rem
+            color color-core-text
 
 .core-information-menu
     position: absolute;

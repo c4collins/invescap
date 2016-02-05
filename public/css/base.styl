@@ -4,10 +4,13 @@
             
  // Page Sections           
 .header
-    background-linear-gradient(to top, color-accent-darkest, 100%, color-accent-middle, 30%)
-    box-shadow 0 1px 10px 2px color-accent-darkest-transparent
-    &:after
-        clearfix()
+    background-color color-accent-darkest
+    box-shadow 0 1px 10px 2px @background-color
+    position relative
+    z-index 1
+    .inner-container
+        &:after
+            clearfix()
     .logo-wrapper
         *
             border-right 1px solid color-choice(@background-color)
@@ -18,45 +21,87 @@
     .logo-invescap
         image-choice(True, @background-color, "../images/logo-invescap", "png")
         float right
-    .header-menu
-        // display inline-block
-        square-icon-size(icon-size)
-        image-choice(True, @background-color, "../images/icons/menu", "png")
-        &:hover
-            li
-                display block
-        li
-            display none
+    // .header-menu
+    //     // display inline-block
+    //     square-icon-size(icon-size)
+    //     image-choice(True, @background-color, "../images/icons/menu", "png")
+    //     &:hover
+    //         li
+    //             display block
+    //     li
+    //         display none
 .hero 
     background-color color-accent-middle
     &:after
         clearfix()
     h1
+        display inline-block
         margin-top 0
-        font-size 25px
-        color color-accent-lightest
-    .hero-image
+        padding-top 25px
+        margin-left 25px
+        font-weight 500
+        font-size 2.8rem
+        color color-core-text
+        text-transform uppercase
+        border-bottom (@font-weight/175)px solid @color
+    .hero-image  
         padding-bottom 45px
+    .hero-image-overlay
+        background-image linear-gradient(152deg, color-accent-middle, color-accent-middle 7%, transparent 40%), linear-gradient(177deg, color-accent-middle, color-accent-middle 6%, transparent 13%)
+        height 779px
+        position absolute
+        z-index 1
+        width page-width
+        h2
+            padding-top 115px
+            padding-left 115px
+            width 450px
+            color color-accent-lightest
+            text-transform uppercase
+            font-size 2.5rem
+        
 .program-infobox
-    background-color color-accent-darkest
+    background-color color-accent-middle
     &:after
         clearfix()
-    h3
-        font-size 18px
-        color color-accent-lightest
+    h4,
+    h5        
+        color color-core-text
         text-transform uppercase
-        font-weight normal
+        margin-bottom 1.0rem
+    h4
+        font-size 1.4rem
+        font-weight 900
+    h5
+        font-size 1.2rem
     div
-        color color-accent-lightest
-        font-size 8pt
+        color color-core-text
+        text-align left
+        font-size 1.2rem
+        padding-right 15%
+        font-weight 400
+        p
+            padding 0
+            margin 0
+        strong
+            text-transform uppercase
         a
-            color color-accent-lightest
+            color color-accent-darkest
+        &:last-child
+            text-align right
+            font-size 1.1rem
+            padding-left 20%
+            padding-right 0
+            strong
+                text-transform none
+            
 .core
     h2
         text-transform uppercase
         font-size 21px
         padding-left 15px
         border-bottom 2px solid color-accent-darkest
+        
 .core-information
     position relative
     background-color color-accent-lightest

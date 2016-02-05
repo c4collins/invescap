@@ -86,7 +86,7 @@
                                 {
                                     "code": "Módulo II",
                                     "name": "Etapa y Perfil de las Empresas Objetivo de Inversión.",
-                                    "date": {"year": "2016", "month": "02", "day": "44"},
+                                    "date": {"year": "2016", "month": "02", "day": "29"},
                                     "length": {"hours": 4},
                                     "speaker": "Carlos de la Torre",
                                     "details": "Identificar la etapa en la que se encuentra una empresa objetivo de inversión, y en base a esto, reconocer sus puntos críticos y el retorno esperado."
@@ -291,5 +291,36 @@
             "phone": "(33) 3669 3000 ext 2220"
         }
     },
-    "page_title": "INVESCAP - EGAVE Business School - Educatión Ejecutiva"
+    "page_title": "INVESCAP - EGAVE Business School - Educatión Ejecutiva",
+    "month_names": {
+        "en": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "es": [
+            "enero",
+            "febrero",
+            "marzo",
+            "abril",
+            "mayo",
+            "junio",
+            "julio",
+            "agosto",
+            "septiembre",
+            "octubre",
+            "noviembre",
+            "deciembre"
+        ]
+    }
+
 }
