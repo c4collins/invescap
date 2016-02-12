@@ -1,5 +1,4 @@
 section(class="program-infobox grid flex")
-    h3(class="col_12")!= public._data.program_info.program_name
     div(class="col_6")
         if public._data.program_info.start_date
             h4!= public._data.program_info.start_date.day + " de " + public._data.month_names.es[public._data.program_info.start_date.month] + " de " + public._data.program_info.start_date.year
