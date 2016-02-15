@@ -12,8 +12,8 @@ ul.horizontal-menu
                 
 ul.horizontal-menu-primary
     border-style solid
-    border-color color-accent-medium transparent color-content-text
-    border-width 1px 0
+    border-color color-content-text transparent
+    border-width 1px 0 2px
     li
         width 25%
         text-align center
@@ -33,7 +33,6 @@ ul.horizontal-menu-primary
                 background-color color-accent-light
         ul
             width 100%
-            font-size 1.0rem
             li
                 width 100%
                 &:hover,
@@ -52,26 +51,26 @@ ul.horizontal-menu-secondary
         a
             // font-variant small-caps
             text-transform uppercase
-            font-size 1.1rem
+            font-size fs-content-small
             color color-content-text
 
-.core-information-menu
-    position: absolute;
-    left: -170px;
-    top: 20px;
-    float: left;
-    square-icon-size(icon-size)
-    background-position  top right
-    width 150px
-    ul
-        display none
-        margin-top icon-size
-        background-color color-accent-medium
-        li
-            a
-                color color-accent-dark
-                text-transform uppercase
-                font-weight bold
-    &:hover
-        ul
-            display block
+// .core-information-menu
+//     position: absolute;
+//     left: -170px;
+//     top: 20px;
+//     float: left;
+//     square-icon-size(icon-size)
+//     background-position  top right
+//     width 150px
+//     ul
+//         display none
+//         margin-top icon-size
+//         background-color color-content-text
+//         li
+//             a
+//                 color color-accent-dark
+//                 text-transform uppercase
+//                 font-weight bold
+//     &:hover
+//         ul
+//             display block
