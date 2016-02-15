@@ -1,3 +1,4 @@
+@require "defaults"
 // Menu Settings
 .menu
     background transparent
@@ -7,18 +8,18 @@
 ul.horizontal-menu
     margin 0
         a
-            color color-core-text
+            color color-content-text
                 
 ul.horizontal-menu-primary
     border-style solid
-    border-color color-accent-darkest-transparent transparent color-core-text
+    border-color color-accent-medium transparent color-content-text
     border-width 1px 0
     li
         width 25%
         text-align center
         a
             width 100%
-            color color-core-text
+            color color-content-text
             letter-spacing 3px
             // font-variant small-caps
             text-transform uppercase
@@ -29,7 +30,7 @@ ul.horizontal-menu-primary
         &:hover,
         .hover
             a
-                background-color color-accent-lightest
+                background-color color-accent-light
         ul
             width 100%
             font-size 1.0rem
@@ -38,8 +39,8 @@ ul.horizontal-menu-primary
                 &:hover,
                 .hover
                     a
-                        background-color color-accent-darkest
-                        color color-accent-lightest
+                        background-color color-accent-dark
+                        color color-accent-light
                 
 ul.horizontal-menu-primary-submenu
     border-width 1px 0 0 0
@@ -52,7 +53,7 @@ ul.horizontal-menu-secondary
             // font-variant small-caps
             text-transform uppercase
             font-size 1.1rem
-            color color-core-text
+            color color-content-text
 
 .core-information-menu
     position: absolute;
@@ -65,10 +66,10 @@ ul.horizontal-menu-secondary
     ul
         display none
         margin-top icon-size
-        background-color color-accent-darkest-transparent
+        background-color color-accent-medium
         li
             a
-                color color-accent-darkest
+                color color-accent-dark
                 text-transform uppercase
                 font-weight bold
     &:hover

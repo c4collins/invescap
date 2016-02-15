@@ -4,7 +4,7 @@
             
  // Page Sections           
 .header
-    background-color color-accent-darkest
+    background-color color-accent-dark
     box-shadow 0 1px 10px 2px @background-color
     position relative
     z-index 1
@@ -13,7 +13,7 @@
             clearfix()
 
 .hero 
-    background-color color-accent-middle
+    background-color color-accent-medium
     &:after
         clearfix()
     h1
@@ -23,13 +23,13 @@
         margin-left 25px
         font-weight 500
         font-size 2.8rem
-        color color-core-text
+        color color-content-text
         text-transform uppercase
         border-bottom (@font-weight/175)px solid @color
     .hero-image  
         padding-bottom 45px
     .hero-image-overlay
-        // background-image linear-gradient(152deg, color-accent-middle, color-accent-middle 7%, transparent 40%), linear-gradient(177deg, color-accent-middle, color-accent-middle 6%, transparent 13%)
+        // background-image linear-gradient(152deg, color-accent-medium, color-accent-medium 7%, transparent 40%), linear-gradient(177deg, color-accent-medium, color-accent-medium 6%, transparent 13%)
         height 779px
         position absolute
         z-index 1
@@ -38,17 +38,17 @@
             padding-top 115px
             padding-left 115px
             width 450px
-            color color-accent-lightest
+            color color-accent-light
             text-transform uppercase
             font-size 2.5rem
         
 .program-infobox
-    background-color color-accent-middle
+    background-color color-accent-medium
     &:after
         clearfix()
     h4,
     h5        
-        color color-core-text
+        color color-content-text
         text-transform uppercase
         margin-bottom 1.0rem
     h4
@@ -57,7 +57,7 @@
     h5
         font-size 1.2rem
     div
-        color color-core-text
+        color color-content-text
         text-align left
         font-size 1.2rem
         padding-right 15%
@@ -68,7 +68,7 @@
         strong
             text-transform uppercase
         a
-            color color-accent-darkest
+            color color-accent-dark
         &:last-child
             text-align right
             font-size 1.1rem
@@ -82,23 +82,30 @@
         text-transform uppercase
         font-size 21px
         padding-left 15px
-        border-bottom 2px solid color-accent-darkest
+        border-bottom 2px solid color-accent-dark
+    .dinamica
+        background-color color-accent-light
+        color color-accent-dark
+        h2
+            border-bottom none
+            
     .speakers-and-modules
-        background-color color-accent-darkest-transparent
+        background-color color-accent-medium
         &:after
             clearfix()
         h2
             text-align center
             font-size 2.8rem
             padding 15px 0
-            background-color color-accent-darkest
-            color color-accent-lightest
+            background-color color-accent-dark
+            color color-accent-light
+            border none
         h3
             font-size 2.8rem
             padding 0
-            color color-accent-darkest
+            color color-accent-dark
             text-transform uppercase
-            margin-bottom 0
+            margin-bottom 0.25em
         // .module-container
         //     padding 0 20%
         .module
@@ -118,7 +125,7 @@
                 & td:first-child
                     vertical-align top
                 & td:last-child
-                    vertical-align middle
+                    vertical-align medium
                     padding-top 0
             p
                 font-size 1.8rem
@@ -133,11 +140,11 @@
                         color color-accent-contrast
 .core-information
     position relative
-    background-color color-accent-lightest
-    color color-choice(@background-color, color-accent-lightest, color-accent-darkest)
+    background-color color-accent-light
+    color color-choice(@background-color, color-accent-light, color-accent-dark)
     margin 20px 0 30px 120px
     footer        
-        border-bottom 2px solid color-accent-darkest
+        border-bottom 2px solid color-accent-dark
         padding-bottom 5px
         &:after
             clearfix()
@@ -160,15 +167,15 @@
     //     li
     //         display none
 .information-slider
-    background-color color-accent-darkest
-    color color-accent-lightest
+    background-color color-accent-dark
+    color color-accent-light
     margin 20px 0 30px
     padding-bottom 35px
     h2
         text-transform uppercase
         font-size 21px
         padding-left 15px
-        border-bottom 2px solid color-accent-lightest
+        border-bottom 2px solid color-accent-light
     div.bx-wrapper
         margin 30px auto
         background-color @background-color
@@ -182,7 +189,7 @@
     .vanessa-kolodziej
         background-image url("../images/speakers-vanessa-kolodziej.png")
 .footer
-    background-color color-accent-lightest
+    background-color color-accent-light
     &:after
         clearfix()
     // .footer-icons
@@ -232,11 +239,11 @@
             line-height @font-size + 0.1
             position relative
             i
-                color color-accent-middle
+                color color-accent-medium
                 position absolute
                 top 0.2rem
             a
-                color color-accent-darkest
+                color color-accent-dark
                 text-transform uppercase   
                 font-weight bold
                 padding-left 45px

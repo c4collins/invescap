@@ -1,29 +1,21 @@
 // General globals
 page-width=80%
 icon-size=35px
-icon-size-small = icon-size
-icon-size-large = 105px
-
-logo-width = 455px
-logo-height = 105px
-
-.social-share
-    background-image url('../images/icons/share.png')
-.social-email
-    background-image url('../images/icons/email.png')
-
 
 // Font Size
+fs-title-large = 2.8rem
+fs-title-medium = 2.4rem
+fs-title-small = 2.0rem
+fs-content-large = 1.8rem
+fs-content-medium = 1.6rem
+fs-content-small = 1.2rem
 
 // Core style components
-color-core-background = white
-color-core-text = #0A273B
-color-accent-darkest = #0B3C5C
-color-accent-darkest-transparent = alpha(color-accent-darkest, 25%)
-color-accent-middle = #BCBCBC
-color-accent-middle-transparent = alpha(color-accent-middle, 50%)
-color-accent-lightest = white
-color-accent-lightest-transparent = alpha(color-accent-lightest, 50%)
+color-content-background = white
+color-content-text = #0A273B
+color-accent-dark = #0B3C5C
+color-accent-medium = #BCBCBC
+color-accent-light = color-content-background
 color-accent-contrast = #FF550F
 
 font-family-main = "Avenir Next","avenir-next", "acumin-pro", sans-serif;
@@ -69,7 +61,7 @@ clearfix()
     display table
     clear both
     
-color-choice(parent_color, light_color=color-accent-lightest, dark_color=color-accent-darkest)
+color-choice(parent_color, light_color=color-accent-light, dark_color=color-accent-dark)
     if light(parent_color)
         dark_color
     if dark(parent_color)
