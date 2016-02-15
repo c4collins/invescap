@@ -1,23 +1,25 @@
 section(class="footer footer-desktop")
     div(class="inner-container")
-        each tagline in public._data.taglines
-            p!=tagline
-        ul(class="footer-icons")
+        ul
             li
-                a(href="fb:")
-                    div(class="icon-social social-facebook")
+                i(class="fa fa-info")
+                a(href="") Recursos
             li
-                a(href="tw:")
-                    div(class="icon-social social-twitter")
+                i(class="fa fa-copy")
+                a(href="") Notas
             li
-                a(href="")
-                    div(class="icon-social social-share")
+                i(class="fa fa-paperclip")
+                a(href="") Papers y Casos
             li
-                div(class="footer-menu")
-                    ul(class="menu vertical")
-                        each link in public._data.secondary_menu
-                            li
-                                a(href=link.url)!= link.name
-        div(class='logo-wrapper col_10')
-            div(class="logo logo-egade")
-            div(class="logo logo-invescap")
+                i(class="fa fa-video-camera")
+                a(href="") Videos
+            li
+                i(class="fa fa-external-link")
+                a(href="") Links
+
+        div(class='logo-wrapper col_12')
+            div(class="col_4")
+                img(src="/images/logo-egade-dark.png")
+            div(class="col_4")
+            div(class="col_4")
+                img(src="/images/logo-invescap-dark.png")

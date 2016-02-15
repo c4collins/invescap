@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "menu_name": "Modulos",
+                    "menu_name": "Módulos",
                     "full_title": "¿Cuáles son los módulos del programa <strong>INVESCAP Executive Program</strong>?",
                     "content_type": "object",
                     "content": [
@@ -74,7 +74,10 @@
                                     "name": "Contexto y Análysis de Fondos de Capital Privado en México.",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": null,
+                                    "speaker": {
+                                        "name": null,
+                                        "company": null
+                                    },
                                     "details": "Identificar los actores principales del sector del capital privado en México y el mundo, así como las características principales de un Fondo. Introducción a la terminología específica."
                                 }
                             ]
@@ -88,7 +91,10 @@
                                     "name": "Etapa y Perfil de las Empresas Objetivo de Inversión.",
                                     "date": {"year": "2016", "month": "02", "day": "29"},
                                     "length": {"hours": 4},
-                                    "speaker": "Carlos de la Torre",
+                                    "speaker": {
+                                        "name": "Carlos de la Torre",
+                                        "company": null
+                                    },
                                     "details": "Identificar la etapa en la que se encuentra una empresa objetivo de inversión, y en base a esto, reconocer sus puntos críticos y el retorno esperado."
                                 },
                                 {
@@ -96,7 +102,10 @@
                                     "name": "Aspectos Cualitativos de una Inversión.",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": "Carlos de la Torre",
+                                    "speaker": {
+                                        "name": "Carlos de la Torre",
+                                        "company": null
+                                    },
                                     "details": "Identificar elementos claves de una empresa para ser un objetivo de inversión atractivo, el perfil del empresario, el equipo de trabajo, etc."
                                 },
                                 {
@@ -104,7 +113,10 @@
                                     "name": "Metodologias de Valorizacion (Modelos de Valuacion) de las Inversiones y Expectativas por Etapa.",
                                     "date": null,
                                     "length": {"hours": 12},
-                                    "speaker": "Varios",
+                                    "speaker": {
+                                        "name": "Varios",
+                                        "company": null
+                                    },
                                     "details": "Entender conceptos financieros en profundidad relacionados con la valuación de una empresa. Conocer y poder aplicar las diferentes metodologías de valuación. Identificar de riesgos de la empresa en donde se va a invertir y su manejo."
                                 },
                                 {
@@ -112,7 +124,10 @@
                                     "name": "Due Diligence de una Inversion.",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": "Speaker de Deloitte",
+                                    "speaker": {
+                                        "name": "Speaker de Deloitte",
+                                        "company": "Deloitte."
+                                    },
                                     "details": "Identificar las características e implicaciones en la ejecución de un Due Diligence en el proceso de investigación, validación, revisión y negociación entre las partes. Cómo llevar el proceso adelante."
                                 },
                                 {
@@ -120,7 +135,10 @@
                                     "name": "Estructuracion de una Inversion y la Salida.",
                                     "date": null,
                                     "length": {"hours": 8},
-                                    "speaker": null,
+                                    "speaker": {
+                                        "name": null,
+                                        "company": null
+                                    },
                                     "details": "Reconocer los distintos instrumentos con los que cuenta un fondo para realizar una inversión, así mismo conocer las implicaciones de cada una de ellas. Conocer las estrategias de salida viables para cada empresa, de tal manera que sean eficientes, exitosas y redituables para las partes involucradas y que se estructuren bien desde el inicio. Identificar las partes de ambos procesos."
                                 }
                             ]
@@ -134,7 +152,10 @@
                                     "name": "Levantamiento de Capital de un Fondo (Fund Raising).",
                                     "date": null,
                                     "length": {"hours": 6},
-                                    "speaker": "Vanesa Kolodziej",
+                                    "speaker": {
+                                        "name": "Vanesa Kolodziej",
+                                        "company": "Caaapital"
+                                    },
                                     "details": "Reconocer las partes involucradas en la preparación de una ronda de levantamiento de capital para un fondo. Esto incluye cómo planearla y ejecutarla, así como como cerrarla."
                                 },
                                 {
@@ -142,7 +163,10 @@
                                     "name": "Estrategia de Fondos (Fund Fundamentals).",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": "Vanesa Kolodziej",
+                                    "speaker": {
+                                        "name": "Vanesa Kolodziej",
+                                        "company": "Caaapital"
+                                    },
                                     "details": "Identificar el propósito, elementos y objetivos de una estrategia de inversión. Explorar mecanismos para definir la estrategia, los lineamientos y la filosofía de inversión del fondo, entendiendo las fortalezas de los fund managers, la oferta y demanda de proyectos, y el contexto donde va a operar el fondo."
                                 },
                                 {
@@ -150,7 +174,10 @@
                                     "name": "Administracion de un Fondo (Fund Management).",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": null,
+                                    "speaker": {
+                                        "name": null,
+                                        "company": null
+                                    },
                                     "details": "Conocer los elementos claves que conlleva administrar un fondo, en sus detalles operativos y del día a día."
                                 },
                                 {
@@ -158,7 +185,10 @@
                                     "name": "Aspectos Legales de Estructuraction y Operacion de un Fondo.",
                                     "date": null,
                                     "length": {"hours": 8},
-                                    "speaker": "Mtro. Daniel Diz",
+                                    "speaker": {
+                                        "name": "Mtro. Daniel Diz",
+                                        "company": null
+                                    },
                                     "details": "Reconocer los vehículos de inversión y aspectos legales para estructurar tanto un fondo como las inversiones hacia la empresa."
                                 },
                                 {
@@ -166,7 +196,10 @@
                                     "name": "Aspectos Fiscales de Estructuraction y Operacion de un Fondo.",
                                     "date": null,
                                     "length": {"hours": 8},
-                                    "speaker": "Alberto Fabio (Intelegis)",
+                                    "speaker": {
+                                        "name": "Alberto Fabio",
+                                        "company": "Intelegis"
+                                    },
                                     "details": "Reconocer los aspectos fiscales que impactan las inversiones en las empresas y hacia los fondos."
                                 }
                             ]
@@ -180,7 +213,10 @@
                                     "name": "VC Trends y Trending Industries.",
                                     "date": null,
                                     "length": {"hours": 4},
-                                    "speaker": "Varios",
+                                    "speaker": {
+                                        "name": "Varios",
+                                        "company": null
+                                    },
                                     "details": "Reconocer las tendencias dentro de la industria de capital privado así como los sectores productivos que actualmente representar atractivas oportunidades de inversión."
                                 }
                             ]
@@ -308,18 +344,18 @@
             "December"
         ],
         "es": [
-            "enero",
-            "febrero",
-            "marzo",
-            "abril",
-            "mayo",
-            "junio",
-            "julio",
-            "agosto",
-            "septiembre",
-            "octubre",
-            "noviembre",
-            "deciembre"
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Deciembre"
         ]
     }
 

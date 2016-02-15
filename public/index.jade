@@ -2,62 +2,64 @@ extends ./layout.jade
 
 block content
     section(class="core core-desktop")
+        include ./components/home_speakers-and-modules
         div(class="inner-container")
-            each section in public._data.content_sections
-                section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
-                    h2!= section.menu_name
-                    ul(class="menu vertical core-information-menu")
-                        each section_content in section.contents ? section.contents : ['There are no values']
-                            li= section_content.menu_name
-                    for section_content in section.contents
-                        section(class=section.menu_name.toLowerCase() + " " + section_content.menu_name.toLowerCase() id=section_content.menu_name.toLowerCase())
-                            h4!= section_content.full_title
-                            if section_content.content_type == "text"
-                                for content_item in section_content.content
-                                    - if (typeof content_item == "string") {
-                                        p!= content_item
-                                    - }
-                                    - else if  (typeof content_item == "object") {
-                                        ul
-                                            for list_item in content_item
-                                                li!= list_item
-                                    - }
-                            else if section_content.content_type == "object"
-                                for content_object in section_content.content
-                                    div
-                                        h5!= content_object.code + ". " + content_object.name.toUpperCase()
-                                        for module in content_object.modules
-                                            div
-                                                h6!= module.code + ". " + module.name.toUpperCase()
-                                                
-                                                if module.date
-                                                    p!= "Fecha: " + module.date.year + "/" + module.date.month + "/" + module.date.day
-                                                
-                                                if module.length.days
-                                                    p!= "Duración: " + module.length.days + " dias"
-                                                else if module.length.hours
-                                                    p!= "Duración: " + module.length.hours + " horas"
-                                                
-                                                if module.speaker
-                                                    p!= "Speaker: " + module.speaker
-                                                
-                                                if module.details
-                                                    p!= module.details
 
-                     footer
-                         a(href="")
-                             div(class="icon-social social-email")
-                         a(href="")
-                             div(class="icon-social social-share")
+        //-     each section in public._data.content_sections
+        //-         section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
+        //-             h2!= section.menu_name
+        //-             ul(class="menu vertical core-information-menu")
+        //-                 each section_content in section.contents ? section.contents : ['There are no values']
+        //-                     li= section_content.menu_name
+        //-             for section_content in section.contents
+        //-                 section(class=section.menu_name.toLowerCase() + " " + section_content.menu_name.toLowerCase() id=section_content.menu_name.toLowerCase())
+        //-                     h4!= section_content.full_title
+        //-                     if section_content.content_type == "text"
+        //-                         for content_item in section_content.content
+        //-                             - if (typeof content_item == "string") {
+        //-                                 p!= content_item
+        //-                             - }
+        //-                             - else if  (typeof content_item == "object") {
+        //-                                 ul
+        //-                                     for list_item in content_item
+        //-                                         li!= list_item
+        //-                             - }
+        //-                     else if section_content.content_type == "object"
+        //-                         for content_object in section_content.content
+        //-                             div
+        //-                                 h5!= content_object.code + ". " + content_object.name.toUpperCase()
+        //-                                 for module in content_object.modules
+        //-                                     div
+        //-                                         h6!= module.code + ". " + module.name.toUpperCase()
+                                                
+        //-                                         if module.date
+        //-                                             p!= "Fecha: " + module.date.year + "/" + module.date.month + "/" + module.date.day
+                                                
+        //-                                         if module.length.days
+        //-                                             p!= "Duración: " + module.length.days + " dias"
+        //-                                         else if module.length.hours
+        //-                                             p!= "Duración: " + module.length.hours + " horas"
+                                                
+        //-                                         if module.speaker
+        //-                                             p!= "Speaker: " + module.speaker
+                                                
+        //-                                         if module.details
+        //-                                             p!= module.details
 
-        section(class="image-slider information-slider")
-            div(class="inner-container")
-                h2 Speakers
-                ul(class="slideshow")
-                    li(class="grid")
-                        div(class="col_8")
-                            h4 Vanessa Kolodziej
-                            p Co-fundadora de NAZCA ventures.
-                            p Actual CFO de CAAPITAL
-                        div(class="col_4")
-                            div(class="speakers vanessa-kolodziej")
+        //-              footer
+        //-                  a(href="")
+        //-                      div(class="icon-social social-email")
+        //-                  a(href="")
+        //-                      div(class="icon-social social-share")
+
+        //- section(class="image-slider information-slider")
+        //-     div(class="inner-container")
+        //-         h2 Speakers
+        //-         ul(class="slideshow")
+        //-             li(class="grid")
+        //-                 div(class="col_8")
+        //-                     h4 Vanessa Kolodziej
+        //-                     p Co-fundadora de NAZCA ventures.
+        //-                     p Actual CFO de CAAPITAL
+        //-                 div(class="col_4")
+        //-                     div(class="speakers vanessa-kolodziej")

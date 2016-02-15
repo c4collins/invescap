@@ -1,0 +1,61 @@
+-var count = 0
+-var roman_numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
+
+section(class="speakers-and-modules")
+    a(name="módulos")
+    h2 Speakers, M&oacute;dulos &amp; Fechas
+    div(class="inner-container")
+        each cs in public._data.content_sections
+            if cs.menu_name == "Programa"
+                each cm, name in cs.contents
+                    if cm.menu_name == "Módulos"
+                        each c in cm.content
+                            -var section_count = 0
+                            h3(class="col_12")=c.name
+                            each m in c.modules
+                                - count++
+                                - section_count++
+                                section(class="module col_6")
+                                    table
+                                        tr
+                                            td
+                                                i(class="fa fa-chevron-right col_1")
+                                            td
+                                                p(class="title col_11 clearfix")
+                                                    != "M&oacute;dulo " + roman_numerals[count] + ":"
+                                                    br
+                                                    = m.name
+                                        tr
+                                            td
+                                                i(class="fa fa-dot-circle-o col_1")
+                                            td
+                                                p(class="description col_11")= m.details
+                                        if m.speaker.name != null 
+                                            tr
+                                                td
+                                                    i(class="fa fa-microphone col_1")
+                                                td
+                                                    p(class="speakers col_11")
+                                                        strong= m.speaker.name
+                                                        if m.speaker.company != null
+                                                            br
+                                                            = m.speaker.company
+                                        tr
+                                            td
+                                                i(class="fa fa-clock-o col_1")
+                                            td
+                                                p(class="length col_11")= m.length.hours + " Horas"
+                                        if m.date != null
+                                            tr
+                                                td
+                                                    i(class="fa fa-calendar col_1")
+                                                td
+                                                    p(class="date col_11")
+                                                        = m.date.day
+                                                        em /
+                                                        = public._data.month_names.es[parseInt(m.date.month)]
+                                                        em /
+                                                        = m.date.year
+
+                                if section_count % 2 == 0
+                                    div(class="clearfix")
