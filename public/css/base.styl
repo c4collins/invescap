@@ -11,6 +11,10 @@
     .inner-container
         &:after
             clearfix()
+        .logo-wrapper
+            img
+                width 100%
+                max-width 355px
 
 .hero 
     background-color color-accent-medium
@@ -88,6 +92,24 @@
         color color-accent-dark
         h2
             border-bottom none
+            margin-bottom 0
+        .horizontal-list
+            div
+                display inline-block
+                width 20%
+                height 100%
+                margin 0
+                padding 0 10px
+                font-size fs-content-medium
+                font-weight bold
+                text-transform uppercase
+                text-align center
+                border-right 1px solid color-accent-dark
+                &:first-child
+                    margin-left 7%
+                &:last-child
+                    border none
+                    margin-right 10%    
             
     .speakers-and-modules
         background-color color-accent-medium
