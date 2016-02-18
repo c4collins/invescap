@@ -126,15 +126,27 @@
             padding 15px 0
             font-weight 300
             width 75%
+        .objetivos-container
+            position relative
+            height 190px
+            margin 0 auto
+            width 630px
         .objetivo
-            top 0
-            bottom 0
-            width 30%
+            position absolute
+            width 190px
             margin 0 1.5%
             padding 25px 10px
             display inline-block
             border-width 1px
-            border-style solid 
+            border-style solid
+            top 0
+            bottom 0
+            left 33.5%
+            &:first-child
+                left 0
+            &:last-child
+                left auto
+                right 0
             h3
                 text-transform uppercase
                 font-size fs-title-small
