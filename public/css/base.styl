@@ -31,21 +31,20 @@
         color color-content-text
         text-transform uppercase
         border-bottom (@font-weight/175)px solid @color
-    .hero-image  
-        padding-bottom 45px
     .hero-image-overlay
         // background-image linear-gradient(152deg, color-accent-medium, color-accent-medium 7%, transparent 40%), linear-gradient(177deg, color-accent-medium, color-accent-medium 6%, transparent 13%)
-        height 779px
+        // height 779px
         position absolute
         z-index 1
         width page-width
         h2
             padding-top 115px
             padding-left 115px
-            width 450px
+            width 55%
             color color-accent-light
             text-transform uppercase
             font-size fs-title-medium
+            font-weight 300
         
 .program-infobox
     background-color color-accent-medium
@@ -88,26 +87,29 @@
         font-size fs-title-large
         padding-left 15px
     .map
+        letter-spacing 3px
         h2
             font-size fs-title-small
             text-align right
             padding 20px 10% 0 0
-        div
+        p
             text-transform uppercase
-            letter-spacing 3px
             font-size fs-content-small - 25%
             text-align center
         .background
             color color-content-background
             background-color color-content-text
-            div
+            p
+                color color-accent-medium
                 font-size fs-title-large
                 font-weight bold
                 letter-spacing 0
+                margin-bottom 0
         .map-image
             img
                 width 80%
-                margin 35px auto
+                margin 55px auto 35px
+                display block
             
             
     .objetivos
@@ -120,7 +122,10 @@
             border-width 2px 0
             border-style solid 
             text-align center
-            margin-bottom 25px
+            margin 0 auto 25px
+            padding 15px 0
+            font-weight 300
+            width 75%
         .objetivo
             top 0
             bottom 0
@@ -152,7 +157,7 @@
             width 57%
             div
                 display table-cell
-                width 25%
+                width 5%
                 // height 100%
                 margin 0
                 padding 0 10px
@@ -220,9 +225,12 @@
                         color color-accent-contrast
 .core-information
     position relative
-    background-color color-accent-light
-    color color-choice(@background-color, color-accent-light, color-accent-dark)
+    background-color color-content-background
+    color color-content-text
     margin 20px 0 30px
+    .inner-container
+        width 68%
+        margin 0 10% 0 18%
     h4
         border-bottom 1px color-accent-dark solid
     footer        
