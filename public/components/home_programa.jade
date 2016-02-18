@@ -1,0 +1,19 @@
+each section in public._data.content_sections
+    if section.menu_name == "Programa"
+        section(class="core-information " + section.menu_name.toLowerCase() id=section.menu_name.toLowerCase())
+            div(class="inner-container")
+                for section_content in section.contents
+                    if section_content.menu_name == "Intro" || section_content.menu_name == "Descriptión"
+                        section(class=section.menu_name.toLowerCase() + " " + section_content.menu_name.toLowerCase() id=section_content.menu_name.toLowerCase())
+                            h4!= section_content.full_title
+                            for content_item in section_content.content
+                                - if (typeof content_item == "string") {
+                                    p!= content_item
+                                - }
+                                - else if  (typeof content_item == "object") {
+                                    ul
+                                        for list_item in content_item
+                                            li!= list_item
+                                - }
+
+                         include ./share_footer

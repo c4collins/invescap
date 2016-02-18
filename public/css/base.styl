@@ -86,7 +86,56 @@
         text-transform uppercase
         font-size fs-title-large
         padding-left 15px
-        border-bottom 2px solid color-accent-dark
+    .map
+        h2
+            font-size fs-title-small
+            text-align right
+            padding 20px 10% 0 0
+        div
+            text-transform uppercase
+            letter-spacing 3px
+            font-size fs-content-small - 25%
+            text-align center
+        .background
+            color color-content-background
+            background-color color-content-text
+            div
+                font-size fs-title-large
+                font-weight bold
+                letter-spacing 0
+            
+            
+    .objetivos
+        color color-content-background
+        border-width 0
+        border-color color-content-background
+        background-color color-content-text
+        padding 25px
+        h2
+            border-width 2px 0
+            border-style solid 
+            text-align center
+            margin-bottom 25px
+        .objetivo
+            top 0
+            bottom 0
+            width 30%
+            margin 0 1.5%
+            padding 25px 10px
+            display inline-block
+            border-width 1px
+            border-style solid 
+            h3
+                text-transform uppercase
+                font-size fs-title-small
+                line-height fs-title-small - 5%
+                margin-bottom 25px
+            ul
+                margin 0
+                li
+                    padding 0
+                    list-style-type none
+                    font-size fs-content-small
     .dinamica
         background-color color-accent-light
         color color-accent-dark
@@ -94,22 +143,26 @@
             border-bottom none
             margin-bottom 0
         .horizontal-list
+            margin 0 auto 20px
+            width 57%
             div
-                display inline-block
-                width 20%
-                height 100%
+                display table-cell
+                width 25%
+                // height 100%
                 margin 0
                 padding 0 10px
-                font-size fs-content-medium
+                font-size fs-content-small
+                line-height fs-content-medium
                 font-weight bold
                 text-transform uppercase
                 text-align center
-                border-right 1px solid color-accent-dark
+                vertical-align middle
+                border-right 2px solid color-accent-dark
                 &:first-child
-                    margin-left 7%
+                    // margin-left 20%
                 &:last-child
                     border none
-                    margin-right 10%    
+                    // margin-right 20%    
             
     .speakers-and-modules
         background-color color-accent-medium
@@ -135,7 +188,7 @@
             i
                 margin 0
                 // margin-top 0.2vw
-                font-size 1.9vw
+                font-size fs-icon-medium
                 line-height @font-size
             table
                 border 0
@@ -164,23 +217,18 @@
     position relative
     background-color color-accent-light
     color color-choice(@background-color, color-accent-light, color-accent-dark)
-    margin 20px 0 30px 120px
+    margin 20px 0 30px
+    h4
+        border-bottom 1px color-accent-dark solid
     footer        
-        border-bottom 2px solid color-accent-dark
-        padding-bottom 5px
+        padding-bottom 25px
         &:after
             clearfix()
-        .icon-social
+        .fa
             float right
-            square-icon-size(icon-size* (2/3))
-        .social-share
-            image-choice(True, @background-color, "../images/icons/share", "png")
-            &:hover
-                image-choice(False, @background-color, "../images/icons/share", "png")
-        .social-email
-            image-choice(True, @background-color, "../images/icons/email", "png")
-            &:hover
-                image-choice(False, @background-color, "../images/icons/email", "png")
+            font-size fs-icon-medium
+            margin 0 6px
+            color color-accent-dark
     // ul.core-information-menu
     //     image-choice(True, @background-color, "../images/icons/menu", "png")
     //     &:hover
@@ -225,32 +273,7 @@
             width 100%
         &:before
             clearfix()
-    
-    // .logo-egade
-    //     image-choice(True, @background-color, "../images/logo-egade", "png")
-    // .logo-invescap
-    //     image-choice(True, @background-color, "../images/logo-invescap", "png")
-        // float right
-        
-    // .social-facebook
-    //     image-choice(True, @background-color, "../images/icons/facebook", "png")
-    //     &:hover
-    //         image-choice(False, @background-color, "../images/icons/facebook", "png")
-        
-    // .social-twitter
-    //     image-choice(True, @background-color, "../images/icons/twitter", "png")
-    //     &:hover
-    //         image-choice(False, @background-color, "../images/icons/twitter", "png") 
-    // .social-share
-    //     image-choice(True, @background-color, "../images/icons/share", "png")
-    //     &:hover
-    //         image-choice(False, @background-color, "../images/icons/share", "png") 
-            
-    // .footer-menu
-    //     display inline-block
-    //     square-icon-size(icon-size)
-    //     image-choice(True, @background-color, "../images/icons/menu", "png")
-                
+             
     ul
         margin 30px 10% 80px
         li
