@@ -126,27 +126,12 @@
             padding 15px 0
             font-weight 300
             width 75%
-        .objetivos-container
+        .objetivos-container-2,
+        .objetivos-container-3
             position relative
             height 190px
-            margin 0 auto
-            width 630px
-        .objetivo
-            position absolute
-            width 190px
-            margin 0 1.5%
-            padding 25px 10px
-            display inline-block
-            border-width 1px
-            border-style solid
-            top 0
-            bottom 0
-            left 33.5%
-            &:first-child
-                left 0
-            &:last-child
-                left auto
-                right 0
+            margin 0 auto 20px
+            width 725px
             h3
                 text-transform uppercase
                 font-size fs-title-small
@@ -158,6 +143,30 @@
                     padding 0
                     list-style-type none
                     font-size fs-content-small
+            .objetivo
+                position absolute
+                width 220px
+                margin 0 1.5%
+                padding 25px 10px
+                display inline-block
+                border-width 1px
+                border-style solid
+                top 0
+                bottom 0
+                left 33.5%
+                &:first-child
+                    left 0
+                &:last-child
+                    left auto
+                    right 0
+        .objetivos-container-2
+            .objetivo
+                &:first-child
+                    left 120px
+                &:last-child
+                    left auto
+                    right 120px
+           
     .dinamica
         background-color color-accent-light
         color color-accent-dark
@@ -186,10 +195,10 @@
                     border none
                     // margin-right 20%    
             
-    .speakers-and-modules
-        background-color color-accent-medium
-        &:after
-            clearfix()
+    .speakers
+    .modules
+        span 
+            color color-accent-contrast
         h2
             text-align center
             font-size fs-title-large
@@ -198,13 +207,40 @@
             color color-accent-light
             border none
         h3
+        h4
             font-size fs-title-large
             padding 0
             color color-accent-dark
             text-transform uppercase
             margin-bottom 0.25em
+        h4
+            font-size fs-title-small
+            text-align center
+        h5
+            font-size fs-content-medium
+            color color-accent-dark
+            text-align center
+        ul
+            background-color color-accent-dark
+            color color-content-background
+            padding 10px
+            margin 0 auto
+            width 50%
+            li
+                list-style-type none
+                margin 0
+                padding 0
         // .module-container
         //     padding 0 20%
+    .speakers
+        margin 25px 0
+        img
+            width 80%
+            display block
+        *
+            margin 0 auto
+    .modules
+        background-color color-accent-medium
         .module
             padding-bottom 25px
             i

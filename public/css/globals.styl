@@ -45,7 +45,7 @@ a
     width page-width
     margin 0 auto
 .sponsor-image
-    width 70%
+    width 35%
     margin 0 auto
     display block
 // Slideshow Global Settings
@@ -58,3 +58,17 @@ a
         div.bx-viewport
             box-shadow(none)
             border 0
+// Parallax
+.parallax {
+  perspective: 1px;
+  // height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.objetivos
+    background-image url("/images/map.png")

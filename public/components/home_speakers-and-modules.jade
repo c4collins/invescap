@@ -1,10 +1,10 @@
 -var count = 0
 -var roman_numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
-section(class="speakers-and-modules")
+section(class="modules")
     a(name="módulos")
     h2 Speakers, M&oacute;dulos &amp; Fechas
-    div(class="inner-container")
+    div(class="inner-container clearfix")
         each cs in public._data.content_sections
             if cs.menu_name == "Programa"
                 each cm, name in cs.contents
@@ -59,3 +59,14 @@ section(class="speakers-and-modules")
 
                                 if section_count % 2 == 0
                                     div(class="clearfix")
+section(class="speakers")
+    div(class="inner-container clearfix")
+        a(name="speakers")
+        for speaker in public._data.speakers
+            div(class="speaker col_4")
+                img(src=speaker.image_path)
+                h4!= speaker.name
+                h5!= speaker.company
+                ul
+                    for point in speaker.description
+                        li!= point

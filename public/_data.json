@@ -261,23 +261,6 @@
             ]
         },
         {
-            "menu_name": "Nosotros",
-            "contents": [
-                {
-                    "menu_name": "Profesores",
-                    "full_title": null,
-                    "content_type": null,
-                    "content": null
-                },
-                {
-                    "menu_name": "Organizadores",
-                    "full_title": null,
-                    "content_type": null,
-                    "content": null
-                }
-            ]
-        },
-        {
             "menu_name": "Recursos",
             "contents": [
                 {
@@ -357,6 +340,30 @@
             "Noviembre",
             "Deciembre"
         ]
-    }
+    },
+    "speakers": [
+        {
+            "name": "Filipe Villa",
+            "image_path": "/images/head-mouse-simple-circle-ours-animal-smile-teeth.png",
+            "company": "Fondo de Fondos M&eacute;xico",
+            "description": [
+                "Dir. Ejecutivo en Fondo de Fondos.",
+                "Dir. Ejecutivo de HSBC Valores Mexico. <span>+</span> de 20 fusiones en Mexico, Colombia y Venezuela.",
+                "Jefe de proyectos de inversiones,",
+                "Fonlyser, Banca Serfin."
+            ]
+        },
+        {
+            "name": "Franco Capurro",
+            "image_path": "/images/head-mouse-simple-circle-ours-animal-smile-teeth.png",
+            "company": "Caaapital <span>/</span> One Key",
+            "description": [
+                "Dir. <span>&</span> Fundador de CAAAPITAL.",
+                "Fundador One Key Ventures.",
+                "Emprenador <span>&</span> Advisor de StartUps.",
+                "Ayud&oacute; a finianciar de la primer mina de titanio en LatAm."
+            ]
+        }
+    ]
 
 }
