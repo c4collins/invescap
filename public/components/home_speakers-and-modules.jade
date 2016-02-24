@@ -1,14 +1,31 @@
 -var count = 0
 -var roman_numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
 
+section(class="speakers-modules-calendar")
+    div(class="background-image parallax")
+    h2 Speakers
+    h2 M&oacute;dulos
+    h2 Calendario
+
+section(class="speakers")
+    div(class="inner-container clearfix")
+        a(name="speakers")
+        for speaker in public._data.speakers
+            div(class="speaker col_4")
+                img(src=speaker.image_path)
+                h4!= speaker.name
+                h5!= speaker.company
+                ul
+                    for point in speaker.description
+                        li!= point
+
 section(class="modules")
-    a(name="módulos")
-    h2 Speakers, M&oacute;dulos &amp; Fechas
+    a(name="m&oacute;dulos")
     div(class="inner-container clearfix")
         each cs in public._data.content_sections
             if cs.menu_name == "Programa"
                 each cm, name in cs.contents
-                    if cm.menu_name == "Módulos"
+                    if cm.menu_name == "M&oacute;dulos"
                         each c in cm.content
                             -var section_count = 0
                             h3(class="col_12")=c.name
@@ -24,12 +41,12 @@ section(class="modules")
                                                 p(class="title col_11 clearfix")
                                                     != "M&oacute;dulo " + roman_numerals[count] + ":"
                                                     br
-                                                    = m.name
+                                                    != m.name
                                         tr
                                             td
                                                 i(class="fa fa-dot-circle-o col_1")
                                             td
-                                                p(class="description col_11")= m.details
+                                                p(class="description col_11")!= m.details
                                         if m.speaker.name != null 
                                             tr
                                                 td
@@ -39,7 +56,7 @@ section(class="modules")
                                                         strong= m.speaker.name
                                                         if m.speaker.company != null
                                                             br
-                                                            = m.speaker.company
+                                                            != m.speaker.company
                                         tr
                                             td
                                                 i(class="fa fa-clock-o col_1")
@@ -53,20 +70,9 @@ section(class="modules")
                                                     p(class="date col_11")
                                                         = m.date.day
                                                         em /
-                                                        = public._data.month_names.es[parseInt(m.date.month)]
+                                                        != public._data.month_names.es[parseInt(m.date.month)]
                                                         em /
                                                         = m.date.year
 
                                 if section_count % 2 == 0
                                     div(class="clearfix")
-section(class="speakers")
-    div(class="inner-container clearfix")
-        a(name="speakers")
-        for speaker in public._data.speakers
-            div(class="speaker col_4")
-                img(src=speaker.image_path)
-                h4!= speaker.name
-                h5!= speaker.company
-                ul
-                    for point in speaker.description
-                        li!= point

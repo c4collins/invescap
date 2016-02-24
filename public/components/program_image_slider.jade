@@ -1,8 +1,32 @@
-section(class="hero-image-overlay")
-    h2!= public._data.program_info.program_name
-section(class="hero-image image-slider")
-    ul(class="slideshow")
-        li
-            img(src="/images/hero-slideshow-1.png")
-        li
-            img(src="/images/map.png")
+section(class="image-slider-container")
+    section(class="hero-image-overlay")
+        h2!= public._data.program_info.program_name
+        table
+            tr
+                td
+                    h5 Sede
+                    p Technol&oacute;gico de Monterrey Campus Guadalajara
+                td
+                    h5 Conferencistas
+                    p 13 Profesionales Consultores y Administradores de fondos
+            tr
+                td
+                    h5 Duraci&oacute;n
+                    p +70 HRS
+                        br
+                        | / 12 M&oacute;dulos
+                td
+                    h5 Fecha
+                    p 24 de Febrero 2016
+    section(class="hero-image image-slider")
+        ul(class="slideshow")
+            li
+                img(src="images/slideshow/01.jpg")
+            li
+                img(src="images/slideshow/02.jpg")
+            li
+                img(src="images/slideshow/03.jpg")
+            li
+                img(src="images/slideshow/04.jpg")
+            li
+                img(src="images/slideshow/05.jpg")

@@ -16,7 +16,8 @@
 html 
   font-size 10px
   box-sizing border-box
-
+p
+    font-size fs-content-small
 h1, h2, h3, h4, h5, h6
     margin 0
 body
@@ -70,5 +71,6 @@ a
   background-attachment: fixed;
   background-size: cover;
 }
-.objetivos
-    background-image url("/images/map.png")
+    &.background-image
+        background-size 100% 100%
+        filter blur(1px) brightness(38%) sepia(1) hue-rotate(163deg)

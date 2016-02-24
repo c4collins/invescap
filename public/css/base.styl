@@ -31,12 +31,19 @@
         color color-content-text
         text-transform uppercase
         border-bottom (@font-weight/175)px solid @color
+    .image-slider-container
+        position relative
+        // img
+        //     filter blur(1px)
     .hero-image-overlay
         // background-image linear-gradient(152deg, color-accent-medium, color-accent-medium 7%, transparent 40%), linear-gradient(177deg, color-accent-medium, color-accent-medium 6%, transparent 13%)
-        // height 779px
+        background-color alpha(color-accent-dark, 0.4)
         position absolute
+        top 0
+        bottom 0
+        right 0
+        left 0
         z-index 1
-        width page-width
         h2
             padding-top 115px
             padding-left 115px
@@ -45,6 +52,18 @@
             text-transform uppercase
             font-size fs-title-medium
             font-weight 300
+        table
+            margin 15% auto 0
+            table-layout fixed
+            width 450px
+            color color-content-background
+            background-color alpha(color-accent-dark, 0.6)
+            tr
+                td
+                    padding 25px
+                    border-bottom none
+                    h5
+                        text-transform uppercase
         
 .program-infobox
     background-color color-accent-medium
@@ -87,37 +106,50 @@
         font-size fs-title-large
         padding-left 15px
     .map
-        letter-spacing 3px
-        h2
-            font-size fs-title-small
-            text-align right
-            padding 20px 10% 0 0
-        p
-            text-transform uppercase
-            font-size fs-content-small - 25%
-            text-align center
-        .background
-            color color-content-background
-            background-color color-content-text
+        .map-info
+            position absolute
+            width 100%
+            letter-spacing 3px
+            margin-top -440px
+            margin-bottom 210px
+            h2
+                font-size fs-title-small
+                text-align right
+                padding 20px 10% 0 0
             p
-                color color-accent-medium
-                font-size fs-title-large
-                font-weight bold
-                letter-spacing 0
-                margin-bottom 0
-        .map-image
-            img
-                width 80%
-                margin 55px auto 35px
-                display block
+                text-transform uppercase
+                font-size fs-content-small - 25%
+                text-align center
+                background-color rgba(255, 255, 255, 0.2)
+            .background
+                color color-content-background
+                background-color color-content-text
+                p
+                    color color-accent-medium
+                    font-size fs-title-large
+                    font-weight bold
+                    letter-spacing 0
+                    margin-bottom 0
+                    background-color transparent
+        .map-image.background-image  
+            height 560px
+            background-size auto (@height - 60px)
+            background-image url("../images/map.png")
+            filter none
             
-            
+    .admisiones
     .objetivos
         color color-content-background
         border-width 0
         border-color color-content-background
         background-color color-content-text
-        padding 25px
+        position relative
+        .inner-container
+            position absolute
+            top 25px
+            left 10%
+            right 10%
+            padding 25px
         h2
             border-width 2px 0
             border-style solid 
@@ -126,6 +158,13 @@
             padding 15px 0
             font-weight 300
             width 75%
+        ul
+            margin 0
+            li
+                padding 0
+                list-style-type none
+                font-size fs-content-medium
+        .admisiones-container-3,
         .objetivos-container-2,
         .objetivos-container-3
             position relative
@@ -137,12 +176,7 @@
                 font-size fs-title-small
                 line-height fs-title-small - 5%
                 margin-bottom 25px
-            ul
-                margin 0
-                li
-                    padding 0
-                    list-style-type none
-                    font-size fs-content-small
+            .admision
             .objetivo
                 position absolute
                 width 220px
@@ -166,6 +200,14 @@
                 &:last-child
                     left auto
                     right 120px
+    .admisiones
+        .background-image
+            height 385px
+            background-image url("../images/94_20140708_94-4b4c5d7695a2369a7f49f1f34d14495e.jpg")
+    .objetivos
+        .background-image
+            height 580px
+            background-image url("../images/7.jpg")
            
     .dinamica
         background-color color-accent-light
@@ -194,6 +236,21 @@
                 &:last-child
                     border none
                     // margin-right 20%    
+    .speakers-modules-calendar
+        position relative
+        background-color color-accent-dark
+        .background-image  
+            height 260px
+            background-image url("../images/93_20140708_93-9a1d1db55a2d529eb087700eb7393ca3.jpg")
+        h2
+            // filter grayscale(1) contrast(100%)
+            position absolute
+            font-size fs-title-large
+            color color-content-background
+            margin 25px 10%
+            for n in 2 3 4
+                &:nth-child({n})
+                    top n * 50px - 75px
             
     .speakers
     .modules
@@ -225,7 +282,8 @@
             color color-content-background
             padding 10px
             margin 0 auto
-            width 50%
+            width 75%
+            font-size fs-content-small
             li
                 list-style-type none
                 margin 0
@@ -237,6 +295,8 @@
         img
             width 80%
             display block
+            border-radius(50%)
+            filter sepia(1) hue-rotate(163deg)
         *
             margin 0 auto
     .modules
@@ -291,7 +351,7 @@
             margin 0 6px
             color color-accent-dark
     // ul.core-information-menu
-    //     image-choice(True, @background-color, "../images/icons/menu", "png")
+    //     image-choice(True, @background-color, "..../images/icons/menu", "png")
     //     &:hover
     //         li
     //             display block
@@ -318,7 +378,7 @@
         background-repeat no-repeat
         height 307px
     .vanessa-kolodziej
-        background-image url("../images/speakers-vanessa-kolodziej.png")
+        background-image url("..../images/speakers-vanessa-kolodziej.png")
 .footer
     background-color color-accent-light
     &:after
