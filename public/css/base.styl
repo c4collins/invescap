@@ -52,15 +52,19 @@
             text-transform uppercase
             font-size fs-title-medium
             font-weight 300
+            @media screen and (max-width: 765px)
+                display none
         table
-            margin 15% auto 0
+            margin 10% auto 0
             table-layout fixed
-            width 450px
+            width 45%
             color color-content-background
             background-color alpha(color-accent-dark, 0.6)
+            @media screen and (max-width: 765px)
+                width 75%
             tr
                 td
-                    padding 25px
+                    padding 5%
                     border-bottom none
                     h5
                         text-transform uppercase
@@ -282,23 +286,32 @@
             color color-content-background
             padding 10px
             margin 0 auto
-            width 75%
-            font-size fs-content-small
+            width 90%
+            font-size fs-content-medium
             li
                 list-style-type none
-                margin 0
+                margin 0 0 9px 0
                 padding 0
         // .module-container
         //     padding 0 20%
     .speakers
         margin 25px 0
+        .speaker-image
+            height 200px
+            width 80%
+            border-radius 50%
+            background-size auto 100%
+            background-position center
+            background-repeat no-repeat
+            filter sepia(1) hue-rotate(163deg)
         img
             width 80%
             display block
-            border-radius(50%)
-            filter sepia(1) hue-rotate(163deg)
+            border-radius(50%) 
         *
             margin 0 auto
+        .speaker
+            margin-top 25px
     .modules
         background-color color-accent-medium
         .module

@@ -296,14 +296,14 @@
             "url": "faqs"
         },
         {
-            "name": "Contactanos",
+            "name": "Contact&aacute;nos",
             "url": "contact-us"
         }
     ],
     "program_info": {
         "school_name": "Educati&oacute;n Ejecutiva",
         "program_name": "Capital Privado & Capital Emprendedor",
-        "start_date": {"year": "2016", "month": "2", "day": "19"},
+        "start_date": {"year": "2016", "month": "3", "day": "3"},
         "location": "Salas Ejecutivas, Sal&oacute;n de Congresos Technol&oacute;gico de Monterrey, Campus Guadalajara",
         "contact": {
             "email": "nidia@itesm.mx",
@@ -343,25 +343,89 @@
     },
     "speakers": [
         {
-            "name": "Filipe Villa",
-            "image_path": "images/head-mouse-simple-circle-ours-animal-smile-teeth.png",
+            "name": "Dr. Filipe Villa",
+            "image_path": "images/speakers/felipe.jpg",
             "company": "Fondo de Fondos M&eacute;xico",
             "description": [
-                "Dir. Ejecutivo en Fondo de Fondos.",
-                "Dir. Ejecutivo de HSBC Valores Mexico. <span>+</span> de 20 fusiones en Mexico, Colombia y Venezuela.",
-                "Jefe de proyectos de inversiones,",
-                "Fonlyser, Banca Serfin."
+                "Director General en Corporaci&oacute;n Mexicana de Inversiones de Capital (Fondo de Fondos).",
+                "Durante su carrera profesional ha tenido cargos como director general en HSBC Securieties y en HSBC Servicios financieros. + de 20 fusiones en M&eacute;xico, Colombia y Venezuela.",
+                "Fue Jefe de Proyectos de Inversiones Fonlyser, Banca Serfin."
+            ]
+        },
+        {
+            "name": "Carlos de la Torre",
+            "image_path": "images/speakers/carlos-de-la-torre.jpg",
+            "company": "Fazenda",
+            "description": [
+                "Socio fundador en Fazenda.",
+                "Trabaj&oacute; como director general adjunto en FOCIR.",
+                "M&aacute;s de 20 a&ntilde;os de experiencia en la industria de capital privado en M&eacute;xico.",
+                "Durante su carrera ha administrado m&aacute;s de 5000 millones de pesos."
+            ]
+        },
+        {
+            "name": "Hern&aacute;n Fern&aacute;ndez",
+            "image_path": "images/speakers/Hernan.jpg",
+            "company": "Angel Ventures Mexico",
+            "description": [
+                "CoFounder y Partner en Angel Ventures Mexico, la primer red de inversi&oacute;n &Aacute;ngel operada profesionalmente en M&eacute;xico.",
+                "Con participaci&oacute;n en m&aacute;s de 32 inversiones con un valor de m&aacute;s de 30 Millones USD en coinversi&oacute;n con &Aacute;ngeles invesionistas y otrso fondos.",
+                "Considerado por Tech Cruch como el &Aacute;ngel Inversionista m&aacute;s influyente en M&eacute;xico."
+            ]
+        },
+        {
+            "name": "Vanesa Kolodziej",
+            "image_path": "images/speakers/Vanesa Kolodziej.jpg",
+            "company": "Caaapital <span>/</span> NAZCA Ventures",
+            "description": [
+                "Fundadora de NAZCA Ventures.",
+                "CFO en Caaapital.",
+                "Emprendedora y &Aacute;ngel Inversionista.",
+                "Mentora en 500 Startups, The Founder Institute y StartUp Chile, entre otras, sumando m&aacute;s de 5000 horas de mentoring.",
+                "Una de las &uacute;nicas 5 Managing Partners en LatAm."
+            ]
+        },
+        {
+            "name": "Daniel Diz",
+            "image_path": "images/speakers/Daniel Diz.jpg",
+            "company": "DDR Abogados",
+            "description": [
+                "Director en DDR Abogados.",
+                "Con 15 a&ntilde;os de experiencia en la industria asesorando bancos, instituciones financieras y  fondos de capital privado en operaciones que incluyen",
+                "Ofertas p&uacute;blicas y privadas.",
+                "Entre muchas otras transacciones asesor&oacute; el IPO de Capital Social de Santander en la BMV hacia la NYSE, la compra de AXA del negocio de seguros de da&ntilde;os de HSBC, compra de Meridia Capital Partners en la adquisici&oacute;n de Four Seasons Ciudad de M&eacute;xico y varias inversiones de ACON investments en M&eacute;xico."
+            ]
+        },
+        {
+            "name": "David García",
+            "image_path": "images/speakers/David García 1.jpg",
+            "company": "Siembra Capitales",
+            "description": [
+                "Director Siembra Capitales",
+                "Finanzas Corporativas Grupo Empresarial G",
+                "Consultor M&A por m&aacute;s de $450 millones de USD"
+            ]
+        },
+        {
+            "name": "Alberto Fabio",
+            "image_path": "images/speakers/Alberto.jpg",
+            "company": "Shanghai Ventures <span>/</span> Intelegis",
+            "description": [
+                "Managing Partner y Founder en Shanghai Ventures.",
+                "Socio de la pr&aacute;ctica de Capital Privado en Intelegis.",
+                "Ha participado como asesor en m&aacute;s de 35 fusiones entre ellas una adquisici&oacute;n por Alestra. Actualmente es asesor de varios fondos en M&eacute;xico.",
+                "Recientemente han cerrado operaciones con empresas de tecnología."
             ]
         },
         {
             "name": "Franco Capurro",
-            "image_path": "images/head-mouse-simple-circle-ours-animal-smile-teeth.png",
+            "image_path": "images/speakers/Fanco 2.jpg",
             "company": "Caaapital <span>/</span> One Key",
             "description": [
-                "Dir. <span>&</span> Fundador de CAAAPITAL.",
-                "Fundador One Key Ventures.",
-                "Emprenador <span>&</span> Advisor de StartUps.",
-                "Ayud&oacute; a finianciar de la primer mina de titanio en LatAm."
+                "CEO y Founder en Caaapital.",
+                "Ex CEO en OneKey Ventures para financiar la primer mina de titanio en latinoam&eacute;rica y establecer relaciones entre China y LatAm.",
+                "Asesor para Santander, CaixaBank and BBVA en US, Europe, China y LatAm.",
+                "Actualmente escalando Caaapital con ventas de m&aacute;s de 2 Millones USD en M&eacute;xico."
             ]
         }
     ]
