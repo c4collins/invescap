@@ -4,16 +4,11 @@ html(lang="es")
     body
         include ./components/page_header
         section(class="hero hero-desktop")
-
             div(class="inner-container")
-                h1!= public._data.program_info.school_name
+                h1
+                    a(href="/")!= public._data.program_info.school_name
                 include ./components/page_menu_secondary
                 include ./components/page_menu_primary
-
                 include ./components/program_info
-            include ./components/program_image_slider
-            div(class="inner-container")
-                include ./components/sponsors
-
-        block content
+        != yield
         include ./components/page_footer

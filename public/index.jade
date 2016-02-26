@@ -1,11 +1,13 @@
-extends ./layout.jade
+section(class="hero hero-desktop")
+    include ./components/program_image_slider
+    div(class="inner-container")
+        include ./components/sponsors
 
-block content
-    section(class="core core-desktop")
-        include ./components/home_programa
-        include ./components/home_map
-        include ./components/home_que-es-invescap
-        include ./components/home_objetivos
-        include ./components/home_dinamica
-        include ./components/home_speakers-and-modules
-        include ./components/home_admisiones
+section(class="core core-desktop")
+    include ./components/home_programa
+    include ./components/home_map
+    include ./components/home_que-es-invescap
+    include ./components/home_objetivos
+    include ./components/home_dinamica
+    include ./components/home_speakers-and-modules
+    include ./components/home_admisiones

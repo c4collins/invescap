@@ -1,8 +1,8 @@
 ul(class="menu horizontal-menu horizontal-menu-primary")
     each section in public._data.content_sections
         li
-            a(href="#" + section.menu_name.toLowerCase())!= section.menu_name
+            a(href="/#" + section.menu_name.toLowerCase())!= section.menu_name
             ul(class="horizontal-menu-primary-submenu")
                 each content in section.contents
                     li
-                        a(href="#" + content.menu_name.toLowerCase())!= content.menu_name
+                        a(href="/#" + content.menu_name.toLowerCase())!= content.menu_name

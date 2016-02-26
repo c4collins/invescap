@@ -1,6 +1,7 @@
 @require "defaults"
 @require "globals"
 @require "menu"
+@require "forms"
 @require "slider"
             
  // Page Sections           
@@ -28,9 +29,10 @@
         margin-left 25px
         font-weight 500
         font-size fs-title-large
-        color color-content-text
-        text-transform uppercase
-        border-bottom (@font-weight/175)px solid @color
+        a
+            color color-content-text
+            text-transform uppercase
+            border-bottom (@font-weight/175)px solid @color
     .image-slider-container
         position relative
         // img
